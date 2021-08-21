@@ -65,19 +65,19 @@ const createOrder = async (req, res) => {
                             },
                             greetingTimeout : 1000 * (60),
                             auth: {
-                              user: 'argentavisstore@gmail.com',
-                              pass: 'argentavisteam'
+                              user: 'add your email',
+                              pass: 'add password'
                             },
                       
                             // debug: true, // show debug output
                             logger: true // log information in console
                           }));
-                          const Link = 'https://admin.argentavisstore.com/';
+                          const Link = 'add redirect link';
                           const mailOptions = {
-                            from: 'argentavisstore@gmail.com',
+                            from: 'add your email',
                             to: order.userEmail,
-                            cc: 'argentavisstore@gmail.com',
-                            subject: 'Order Details Argentavis Store',
+                         
+                            subject: 'Order Details ',
                             html: `<b>name</b>:${userFirstName}<br><br> <b>Last name</b>:${userLastName}<br><br> <b>Number</b>:${phone}<br><br> <b>email</b>:${address}<br><br><b>You have Successfully ordered from Argentavis store  </b><br><br><b>Go To your dashboard For order details ${Link} </b>`,
                           };
                           console.log(mailOptions);
